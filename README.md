@@ -49,9 +49,8 @@ pip install --force-reinstall --upgrade python-dateutil
 pip install jupyter
 ```
 
-Mac users need to additionally install CMake and optionally OpenMP to use multithreaded CPU operation:
+Mac users need to additionally install OpenMP to use multithreaded CPU operation. Without OpenMP BoXHED2.0 uses a single CPU core, leading to suboptimal runtime:
 ```
-pip install cmake==3.26.3
 brew install libomp
 ```
 
