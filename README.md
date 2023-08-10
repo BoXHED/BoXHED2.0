@@ -14,6 +14,8 @@ The software was developed and tested in Linux, Mac OS, and Windows10 environmen
 - Python (=3.8)
 - conda  (we recommend using the free [Anaconda distribution](https://docs.anaconda.com/anaconda/install/))
 
+Windows users need to have the Visual Studio 17 2022 toolset installed. For instructions on the installation, refer [here](README_VS_install.md).
+
 ## Setting up BoXHED2.0
 Set up a dedicated virtual environment for BoXHED2.0. This ensures that BoXHED2.0 will not interfere with any existing XGBoost packages. This implementation uses python 3.8.
 
