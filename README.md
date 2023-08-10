@@ -49,6 +49,12 @@ pip install --force-reinstall --upgrade python-dateutil
 pip install jupyter
 ```
 
+Mac users need to additionally install CMake and optionally OpenMP to use multithreaded CPU operation:
+```
+pip install cmake==3.26.3
+brew install libomp
+```
+
 And then, run the following line in your terminal to find the site-packages directory (where we need to put the files):
 ```
 python -c "import sys; site_packages = next(p for p in sys.path if all([k in p for k in ['boxhed2', 'site-packages']])); print(site_packages)"
