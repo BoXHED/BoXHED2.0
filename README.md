@@ -14,12 +14,19 @@ The software was developed and tested in Linux, Mac OS, and Windows10 environmen
 - Python (=3.8)
 - conda  (we recommend using the free [Anaconda distribution](https://docs.anaconda.com/anaconda/install/))
 
-Windows users need to have the Visual Studio 17 2022 toolset installed. For instructions on the installation, refer [here](README_VS_install.md).
 
 ## Setting up BoXHED2.0
+1. Windows users need to have the Visual Studio 17 2022 toolset installed. For instructions on the installation, refer [here](README_VS_install.md).
 Set up a dedicated virtual environment for BoXHED2.0. This ensures that BoXHED2.0 will not interfere with any existing XGBoost packages. This implementation uses python 3.8.
 
 You need to download the prebuilt BoXHED2.0 packages, based on your operating system and architecture, and put them in a directory where Python can find them.
+You can download the BoXHED2.0 package files from the following list:
+* [BoXHED Linux CPU](https://www.dropbox.com/scl/fi/bi5bkae5ahzedej5gskdl/boxhed_linux_cpu.zip?rlkey=il9zv150xncw5awk9i7hhvzu4&dl=0)
+* [BoXHED Linux GPU](https://www.dropbox.com/scl/fi/f5b51d3njlr61fjpk98w0/boxhed_linux_gpu.zip?rlkey=l41bb5egv9ies5v48mvcs20f2&dl=0)
+* [BoXHED Win10 CPU](https://www.dropbox.com/scl/fi/kpz0y8ko7s4aqwdpx5gwu/boxhed_win10_cpu.zip?rlkey=qgy4mkbl78b4vk73tg1m8t32q&dl=0)
+* [BoXHED Win10 GPU](https://www.dropbox.com/scl/fi/wxqfsztoogdsawcev0b6o/boxhed_win10_gpu.zip?rlkey=vc22sgypo9c2oqf2kvkgdhvip&dl=0)
+* [BoXHED OSX CPU M1](https://www.dropbox.com/scl/fi/2rztizbhhm7h8rigl2gmb/boxhed_osx_cpu_M1.zip?rlkey=q9232o0pphhd0eoq5ggbiyzhk&dl=0)
+
 
 In this example we use [Anaconda Prompt](https://docs.anaconda.com/anaconda/install/) to open a terminal. First, create a virtual environment called BoXHED2.0:
 ```
@@ -64,13 +71,6 @@ For example, if running the code above prints the directory:
 ```
 /Users/j.doe/miniconda3/lib/python3.8/site-packages
 ```
-
-Download the BoXHED2.0 package files from the following list:
-* [BoXHED Linux CPU](https://www.dropbox.com/scl/fi/bi5bkae5ahzedej5gskdl/boxhed_linux_cpu.zip?rlkey=il9zv150xncw5awk9i7hhvzu4&dl=0)
-* [BoXHED Linux GPU](https://www.dropbox.com/scl/fi/f5b51d3njlr61fjpk98w0/boxhed_linux_gpu.zip?rlkey=l41bb5egv9ies5v48mvcs20f2&dl=0)
-* [BoXHED Win10 CPU](https://www.dropbox.com/scl/fi/kpz0y8ko7s4aqwdpx5gwu/boxhed_win10_cpu.zip?rlkey=qgy4mkbl78b4vk73tg1m8t32q&dl=0)
-* [BoXHED Win10 GPU](https://www.dropbox.com/scl/fi/wxqfsztoogdsawcev0b6o/boxhed_win10_gpu.zip?rlkey=vc22sgypo9c2oqf2kvkgdhvip&dl=0)
-* [BoXHED OSX CPU M1](https://www.dropbox.com/scl/fi/2rztizbhhm7h8rigl2gmb/boxhed_osx_cpu_M1.zip?rlkey=q9232o0pphhd0eoq5ggbiyzhk&dl=0)
 
 Then copy the folders directly into the directory obtained above.
 After copying the files over, there will be 4 folders:
