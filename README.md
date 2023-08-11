@@ -19,8 +19,18 @@ The software was developed and tested in Linux, Mac OS, and Windows10 environmen
 1. Windows users need to have the Visual Studio 17 2022 toolset installed.
    During installation, under the "Workloads" tab select "Desktop Development with C++" in the "Desktop and Mobile" section. Make the following selections in the menu that shows up on the right:
 ![sc__](https://user-images.githubusercontent.com/34462617/201495851-c7d02796-31e0-4181-9eba-78065d2a5f59.png)
+2. Set up a dedicated virtual environment for BoXHED2.0. This ensures that BoXHED2.0 will not interfere with any existing XGBoost packages. This implementation uses python 3.8. In this example we use [Anaconda Prompt](https://docs.anaconda.com/anaconda/install/) to open a terminal. First, create a virtual environment called BoXHED2.0:
+```
+conda create -n boxhed2 python=3.8
+```
 
-Set up a dedicated virtual environment for BoXHED2.0. This ensures that BoXHED2.0 will not interfere with any existing XGBoost packages. This implementation uses python 3.8.
+then activate it
+```
+conda activate boxhed2
+```
+3. asdasd
+
+
 
 You need to download the prebuilt BoXHED2.0 packages, based on your operating system and architecture, and put them in a directory where Python can find them.
 You can download the BoXHED2.0 package files from the following list:
@@ -31,15 +41,7 @@ You can download the BoXHED2.0 package files from the following list:
 * [BoXHED OSX CPU M1](https://www.dropbox.com/scl/fi/2rztizbhhm7h8rigl2gmb/boxhed_osx_cpu_M1.zip?rlkey=q9232o0pphhd0eoq5ggbiyzhk&dl=0)
 
 
-In this example we use [Anaconda Prompt](https://docs.anaconda.com/anaconda/install/) to open a terminal. First, create a virtual environment called BoXHED2.0:
-```
-conda create -n boxhed2 python=3.8
-```
 
-then activate it
-```
-conda activate boxhed2
-```
 
 Install the dependencies by pasting the following lines in your terminal:
 ```
