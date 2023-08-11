@@ -20,6 +20,13 @@ The software was developed and tested in Linux, Mac OS, and Windows10 environmen
    During installation, under the "Workloads" tab select "Desktop Development with C++" in the "Desktop and Mobile" section. Make the following selections in the menu that shows up on the right:
 ![sc__](https://user-images.githubusercontent.com/34462617/201495851-c7d02796-31e0-4181-9eba-78065d2a5f59.png)
 
+2. Download the prebuilt BoXHED2.0 packages, based on your operating system and architecture from the following list:
+* [BoXHED Linux CPU](https://www.dropbox.com/scl/fi/bi5bkae5ahzedej5gskdl/boxhed_linux_cpu.zip?rlkey=il9zv150xncw5awk9i7hhvzu4&dl=0)
+* [BoXHED Linux GPU](https://www.dropbox.com/scl/fi/f5b51d3njlr61fjpk98w0/boxhed_linux_gpu.zip?rlkey=l41bb5egv9ies5v48mvcs20f2&dl=0)
+* [BoXHED Win10 CPU](https://www.dropbox.com/scl/fi/kpz0y8ko7s4aqwdpx5gwu/boxhed_win10_cpu.zip?rlkey=qgy4mkbl78b4vk73tg1m8t32q&dl=0)
+* [BoXHED Win10 GPU](https://www.dropbox.com/scl/fi/wxqfsztoogdsawcev0b6o/boxhed_win10_gpu.zip?rlkey=vc22sgypo9c2oqf2kvkgdhvip&dl=0)
+* [BoXHED OSX CPU M1](https://www.dropbox.com/scl/fi/2rztizbhhm7h8rigl2gmb/boxhed_osx_cpu_M1.zip?rlkey=q9232o0pphhd0eoq5ggbiyzhk&dl=0)
+  This step will download a .zip file in your Downloads folder, if you haven't selected any other directory for the downloaded file.
 
 3. Set up a dedicated virtual environment for BoXHED2.0. This ensures that BoXHED2.0 will not interfere with any existing XGBoost packages. This implementation uses python 3.8. In this example we use [Anaconda Prompt](https://docs.anaconda.com/anaconda/install/) to open a terminal. First, create a virtual environment called BoXHED2.0:
 ```
@@ -30,22 +37,8 @@ then activate it
 ```
 conda activate boxhed2
 ```
-3. asdasd
 
-
-
-You need to download the prebuilt BoXHED2.0 packages, based on your operating system and architecture, and put them in a directory where Python can find them.
-You can download the BoXHED2.0 package files from the following list:
-* [BoXHED Linux CPU](https://www.dropbox.com/scl/fi/bi5bkae5ahzedej5gskdl/boxhed_linux_cpu.zip?rlkey=il9zv150xncw5awk9i7hhvzu4&dl=0)
-* [BoXHED Linux GPU](https://www.dropbox.com/scl/fi/f5b51d3njlr61fjpk98w0/boxhed_linux_gpu.zip?rlkey=l41bb5egv9ies5v48mvcs20f2&dl=0)
-* [BoXHED Win10 CPU](https://www.dropbox.com/scl/fi/kpz0y8ko7s4aqwdpx5gwu/boxhed_win10_cpu.zip?rlkey=qgy4mkbl78b4vk73tg1m8t32q&dl=0)
-* [BoXHED Win10 GPU](https://www.dropbox.com/scl/fi/wxqfsztoogdsawcev0b6o/boxhed_win10_gpu.zip?rlkey=vc22sgypo9c2oqf2kvkgdhvip&dl=0)
-* [BoXHED OSX CPU M1](https://www.dropbox.com/scl/fi/2rztizbhhm7h8rigl2gmb/boxhed_osx_cpu_M1.zip?rlkey=q9232o0pphhd0eoq5ggbiyzhk&dl=0)
-
-
-
-
-Install the dependencies by pasting the following lines in your terminal:
+4. Install the dependencies by pasting the following lines in your terminal:
 ```
 pip install matplotlib==3.7.1
 pip install pillow==9.4.0
@@ -68,27 +61,36 @@ Mac users need to additionally install OpenMP to use multithreaded CPU operation
 brew install libomp
 ```
 
-And then, run the following line in your terminal to find the site-packages directory (where we need to put the files):
+5. To find where the downloaded BoXHED2.0 files need to be put, run the following line:
 ```
 python -c "import sys; site_packages = next(p for p in sys.path if all([k in p for k in ['boxhed2', 'site-packages']])); print(site_packages)"
 ```
 
-Running the line above prints a directory in the terminal. Now unzip the file and copy what’s inside into the directory which was just printed.
-For example, if running the code above prints the directory:
+Running the line above prints a directory in the terminal. For example, the following directory gets printed:
 ```
-/Users/j.doe/miniconda3/lib/python3.8/site-packages
-```
-
-Then copy the folders directly into the directory obtained above.
-After copying the files over, there will be 4 folders:
-```
-/Users/j.doe/miniconda/lib/python3.8/site-packages/boxhed/
-/Users/j.doe/miniconda/lib/python3.8/site-packages/boxhed_kernel/
-/Users/j.doe/miniconda/lib/python3.8/site-packages/boxhed_prep/
-/Users/j.doe/miniconda/lib/python3.8/site-packages/shap/
+/home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/
 ```
 
-Run *BoXHED2_tutorial.ipynb* for a demonstration of how to fit a BoXHED hazard estimator.
+6. In step 2 you downloaded a .zip file. In step 5 we identified a directory. Now copy the folders inside the .zip file into the directory identified in step 5.
+After copying the files over, the following folders need to exist:
+```
+/home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/boxhed/
+/home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/boxhed_kernel/
+/home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/boxhed_prep/
+/home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/shap/
+```
+
+7. Clone this repository by running:
+```
+git clone https://github.com/BoXHED/BoXHED2.0_.git
+```
+
+8. Go to the directory:
+```
+cd BoXHED2.0_
+```
+
+9. Run *BoXHED2_tutorial.ipynb* for a demonstration of how to fit a BoXHED hazard estimator.
 ```
 jupyter notebook BoXHED2_tutorial.ipynb
 ```
