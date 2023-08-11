@@ -29,7 +29,7 @@ The software was developed and tested in Linux, Mac OS, and Windows10 environmen
   
   This step will download a .zip file in your Downloads folder, if you haven't selected any other directory for the downloaded file.
 
-3. Set up a dedicated virtual environment for BoXHED2.0. This ensures that BoXHED2.0 will not interfere with any existing XGBoost packages. This implementation uses python 3.8. In this example we use [Anaconda Prompt](https://docs.anaconda.com/anaconda/install/) to open a terminal. First, create a virtual environment called BoXHED2.0:
+3. Set up a dedicated virtual environment for BoXHED2.0. This ensures that BoXHED2.0 will not interfere with any existing XGBoost packages. This implementation uses python 3.8. In this example we use [Anaconda Prompt](https://docs.anaconda.com/anaconda/install/) to open a terminal. First, create a virtual environment called boxhed2:
 ```
 conda create -n boxhed2 python=3.8
 ```
