@@ -53,6 +53,10 @@ pip install tqdm==4.65.0
 pip install threadpoolctl==3.1.0
 pip install scipy==1.10.1
 pip install joblib==1.2.0
+pip install chardet==5.2.0
+pip install slicer==0.0.7
+pip install numba==0.57.1
+pip install cloudpickle==2.2.1
 pip install --force-reinstall --upgrade python-dateutil
 pip install jupyter
 ```
