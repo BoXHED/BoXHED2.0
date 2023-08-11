@@ -81,12 +81,12 @@ After copying the files over, the following folders need to exist:
 /home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/shap/
 ```
 
-7. Clone this repository by running:
+7. Back in the terminal, clone this repository by running:
 ```
 git clone https://github.com/BoXHED/BoXHED2.0_.git
 ```
 
-8. Go to the directory:
+8. Go to the directory BoXHED2.0_:
 ```
 cd BoXHED2.0_
 ```
