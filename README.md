@@ -57,9 +57,11 @@ pip install --force-reinstall --upgrade python-dateutil
 pip install jupyter
 ```
 
-Mac users need to additionally install OpenMP to use multithreaded CPU operation. Without OpenMP BoXHED2.0 uses a single CPU core, leading to suboptimal runtime:
+Mac users need to additionally install OpenMP 11.1.0 to use multithreaded CPU operation. Without OpenMP BoXHED2.0 uses a single CPU core, leading to suboptimal runtime. Also, if OpenMP is not present, setting the variable nthread to a value other than 1 may result in a runtime error:
 ```
-brew install libomp
+wget https://raw.githubusercontent.com/chenrui333/homebrew-core/0094d1513ce9e2e85e07443b8b5930ad298aad91/Formula/libomp.rb
+brew unlink libomp
+brew install --build-from-source ./libomp.rb
 ```
 
 5. To find where the downloaded BoXHED2.0 files need to be put, run the following line:
