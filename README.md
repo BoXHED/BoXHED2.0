@@ -70,7 +70,7 @@ brew install --build-from-source ./libomp.rb
 
 5. To find where the downloaded BoXHED2.0 files need to be put, run the following line:
 ```
-python -c "import sys; site_packages = next(p for p in sys.path if all([k in p for k in ['boxhed2', 'site-packages']])); print(site_packages)"
+python -c "import sys; site_packages = next(p for p in sys.path if all([k in p for k in ['boxhed2', 'site-packages']])); print('\n'*2); print(site_packages); print('\n'*2)"
 ```
 
 Running the line above prints a directory in the terminal. For example, the following directory gets printed:
