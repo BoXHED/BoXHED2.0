@@ -60,6 +60,7 @@ pip install cloudpickle==2.2.1
 pip install --force-reinstall --upgrade python-dateutil
 pip install jupyter
 ```
+If there are any issues with the `pip` installation any of the packages above, you can use `conda install` to install them.
 
 Mac users need to additionally install OpenMP 11.1.0 to use multithreaded CPU operation. Without OpenMP BoXHED2.0 uses a single CPU core, leading to suboptimal runtime. Also, if OpenMP is not present, setting the variable nthread to a value other than 1 may result in a runtime error:
 ```
