@@ -101,3 +101,4 @@ cd BoXHED2.0_
 ```
 jupyter notebook BoXHED2_tutorial.ipynb
 ```
+For Mac users, Apple's security system may complain about the precompiled components of BoXHED2.0. In that case, the instructions on [this page](https://www.easeus.com/computer-instruction/apple-cannot-check-it-for-malicious-software.html) will be helpful.
