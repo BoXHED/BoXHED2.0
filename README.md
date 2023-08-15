@@ -84,7 +84,7 @@ After copying the files over, the following folders need to exist:
 /home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/boxhed/
 /home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/boxhed_kernel/
 /home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/boxhed_prep/
-/home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/shap/
+/home/grads/d/j.doe/anaconda3/envs/boxhed2/lib/python3.8/site-packages/boxhed_shap/
 ```
 
 7. Back in the terminal, clone this repository by running:
