@@ -91,7 +91,7 @@ After placing the unzipped contents into this directory, the following folders s
 cd BoXHED2.0
 ```
 
-8. Run *BoXHED2_tutorial.ipynb* for a demonstration of how to fit a BoXHED hazard estimator:
+7. Run *BoXHED2_tutorial.ipynb* for a demonstration of how to fit a BoXHED hazard estimator:
 ```
 jupyter notebook BoXHED2_tutorial.ipynb
 ```
