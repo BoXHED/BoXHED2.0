@@ -8,6 +8,16 @@ What’s new (over BoXHED1.0):
  - Allows for survival data beyond right censoring, including recurrent events, and cause-specific hazards in competing risks settings
  - Significant speedup from data preprocessing and C++ codebase
  - Multicore CPU and GPU support
+ - Integrated [TreeSHAP](https://github.com/shap/shap) support for interpretable explanations of estimated log-hazard values
+
+## Suggested citations
+- Pakbin, Wang, Mortazavi, Lee (2023): [BoXHED2.0: Scalable boosting of dynamic survival analysis](https://arxiv.org/abs/2103.12591)
+
+- Lee, Chen, Ishwaran (2021): [Boosted nonparametric hazards with time-dependent covariates](https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-4/Boosted-nonparametric-hazards-with-time-dependent-covariates/10.1214/20-AOS2028.full) (*Annals of Statistics*  49:4:2101-2128)
+
+- Wang, Pakbin, Mortazavi, Zhao, Lee (2020): [BoXHED: Boosted eXact
+Hazard Estimator with Dynamic covariates](http://proceedings.mlr.press/v119/wang20o/wang20o.pdf) (*International Conference on Machine
+Learning (ICML)* 9973–9982)
 
 ## Prerequisites
 The software was developed and tested in Linux, Mac OS, and Windows10 environments. The requirements are the following:
