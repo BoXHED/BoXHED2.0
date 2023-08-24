@@ -2,7 +2,7 @@
 
 **Bo**osted e**X**act **H**azard **E**stimator with **D**ynamic covariates v2.0 (BoXHED2.0, pronounced 'box-head') is a software package for nonparametrically estimating hazard functions via gradient boosted trees. BoXHED2.0 accommodates both time-static and time-dependent covariates.
 
-Please refer to the [BoXHED2.0 paper](#suggested-citations) for details, which builds on the [BoXHED1.0 paper](#suggested-citations). The theoretical underpinnings for BoXHED is provided [here](#suggested-citations) (Annals of Statistics 2021).
+Please refer to [Pakbin et al. (2023)](#suggested-citations) for details, which builds on [Wang et al. (2020)](#suggested-citations). The theoretical underpinnings for BoXHED is provided in [Lee, Chen, Ishwaran (2021)](#suggested-citations).
 
 What’s new (over BoXHED1.0):
  - Allows for survival data beyond right censoring, including recurrent events, and cause-specific hazards in competing risks settings
