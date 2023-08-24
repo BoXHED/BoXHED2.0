@@ -16,7 +16,7 @@ What’s new (over BoXHED1.0):
 - Lee, Chen, Ishwaran (2021): [Boosted nonparametric hazards with time-dependent covariates](https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-4/Boosted-nonparametric-hazards-with-time-dependent-covariates/10.1214/20-AOS2028.full) (*Annals of Statistics*  49:4:2101-2128)
 
 - Wang, Pakbin, Mortazavi, Zhao, Lee (2020): [BoXHED: Boosted eXact
-Hazard Estimator with Dynamic covariates](http://proceedings.mlr.press/v119/wang20o/wang20o.pdf) (*International Conference on Machine
+Hazard Estimator with Dynamic covariates](https://proceedings.mlr.press/v119/wang20o.html) (*International Conference on Machine
 Learning (ICML)* 9973–9982)
 
 ## Prerequisites
