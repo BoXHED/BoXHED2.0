@@ -57,9 +57,10 @@ pip install slicer==0.0.7
 pip install numba==0.57.1
 pip install cloudpickle==2.2.1
 pip install --force-reinstall --upgrade python-dateutil
-pip install jupyter
+
+pip install notebook==6.4.12 jupyter-client==7.4.9 jupyter-core==5.3.1 ipykernel==6.25.1 ipython==8.12.2 terminado==0.17.1 pywinpty==1.1.6 nbconvert==7.7.4 nbformat==5.9.2 traitlets==5.9.0 tornado==6.4.2 jinja2==3.1.6 prometheus-client==0.21.1 Send2Trash==1.8.3
 ```
-If there are any issues with the `pip` installation for any of the packages above, you can use `conda install` to install them instead.
+The last install command can be simply replaced with `pip install jupyter` if you experience no version dependency issues. If there are issues with the other `pip` installation commands, you can use `conda install` to install them instead.
 
 4. **[Mac users only]** Install OpenMP 11.1.0 to enable multithreaded CPU operation:
 ```
