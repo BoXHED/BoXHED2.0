@@ -11,9 +11,9 @@ What’s new (over BoXHED1.0):
  - Integrated [TreeSHAP](https://github.com/shap/shap) support for interpretable explanations of estimated log-hazard values
 
 ## Suggested citations
-- Pakbin, Wang, Mortazavi, Lee (2025): [BoXHED2.0: Scalable boosting of dynamic survival analysis]([https://arxiv.org/abs/2103.12591](https://doi.org/10.18637/jss.v113.i03)) (*Journal of Statistical Software* 113:3)
+- Pakbin, Wang, Mortazavi, Lee (2025): [BoXHED2.0: Scalable boosting of dynamic survival analysis](https://doi.org/10.18637/jss.v113.i03) (*Journal of Statistical Software* 113:3)
 
-- Lee, Chen, Ishwaran (2021): [Boosted nonparametric hazards with time-dependent covariates](https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-4/Boosted-nonparametric-hazards-with-time-dependent-covariates/10.1214/20-AOS2028.full) (*Annals of Statistics*  49:4:2101-2128)
+- Lee, Chen, Ishwaran (2021): [Boosted nonparametric hazards with time-dependent covariates](https://www.doi.org/10.1214/20-AOS2028) (*Annals of Statistics*  49:4:2101-2128)
 
 - Wang, Pakbin, Mortazavi, Zhao, Lee (2020): [BoXHED: Boosted eXact
 Hazard Estimator with Dynamic covariates](https://proceedings.mlr.press/v119/wang20o.html) (*International Conference on Machine
